@@ -25,7 +25,7 @@ function Proyects() {
                     <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
                         <h3 className='text-white-50'>Admin Server</h3>
                         <p className='text-light'>
-                            Servidor Administrativo para usos generales. Cuenta con una base de datos en MySQL. Desarrollado completamente en NodeJs junto ExpressJs y HBS para las vistas entre otras librerias de autenticacion
+                            Servidor Administrativo para usos generales. Cuenta con una base de datos en <strong>MySQL</strong>. Desarrollado completamente en <strong>NodeJs</strong> junto <strong>ExpressJs</strong> y <strong>HBS</strong> para las vistas entre otras librerias de autenticacion
                         </p>
                     </div>
                 </div>

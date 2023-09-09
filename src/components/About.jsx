@@ -5,7 +5,7 @@ function About() {
         <>
             <div className="shadow rounded-3 container-fluid bg-body p-5 border my-4" id='about'>
                 <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
-                    <img src={PIC} width='200' className="img-thumbnail rounded-circle" alt="profile pic" />
+                    <img src={PIC} width='300' className="img-thumbnail rounded-circle" alt="profile pic" />
                     <div className='container-fluid p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
                         <h3 className='text-white-50'>Programador FullStack Web</h3>
                         <h6 className='text-white-50'>HTML | CSS | PHP | GoLang | JavaScript | MongoDB | PostgreSQL | Docker | GIT </h6>
