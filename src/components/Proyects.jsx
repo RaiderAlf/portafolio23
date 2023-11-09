@@ -3,6 +3,7 @@ import Promanitas from '../assets/promanitas.png'
 import AdminServer from '../assets/admin.png'
 import Pokemon from '../assets/pokemon.png'
 import Dogs from '../assets/pi.png'
+import Landing from '../assets/landing.png'
 
 function Proyects() {
     return (
@@ -55,7 +56,7 @@ function Proyects() {
                 </div>
                 <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
                     <a href="https://i-salud-optica.vercel.app/">
-                        <img src="blob:https://vercel.com/1ffc7374-d6ca-47e9-a3db-9d0f2ee00bb5" className="img-fluid rounded" alt="profile pic" />
+                        <img src={Landing} className="img-fluid rounded" alt="profile pic" />
                     </a>
                     <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
                         <h3 className='text-white-50'>Landing Page</h3>
