@@ -1,6 +1,8 @@
 //ASSETS
 import Promanitas from '../assets/promanitas.png'
 import AdminServer from '../assets/admin.png'
+import Pokemon from '../assets/pokemon.png'
+import Dogs from '../assets/pi.png'
 
 function Proyects() {
     return (
@@ -26,6 +28,39 @@ function Proyects() {
                         <h3 className='text-white-50'>Admin Server</h3>
                         <p className='text-light'>
                             Servidor Administrativo para usos generales. Cuenta con una base de datos en <strong>MySQL</strong>. Desarrollado completamente en <strong>NodeJs</strong> junto <strong>ExpressJs</strong> y <strong>HBS</strong> para las vistas entre otras librerias de autenticacion
+                        </p>
+                    </div>
+                </div>
+                <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
+                    <a href="https://pokedexk.netlify.app/">
+                        <img src={Pokemon} className="img-fluid rounded" alt="profile pic" />
+                    </a>
+                    <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
+                        <h3 className='text-white-50'>Pokemon APP</h3>
+                        <p className='text-light'>
+                            SPA sencilla sobre pokemones en la cual se consume la PokeAPI
+                        </p>
+                    </div>
+                </div>
+                <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
+                    <a href="https://dogsraider.netlify.app/home">
+                        <img src={Dogs} className="img-fluid rounded" alt="profile pic" />
+                    </a>
+                    <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
+                        <h3 className='text-white-50'>Dogs PI</h3>
+                        <p className='text-light'>
+                            SPA sencilla sobre razas de perros con algunas de sus caracteristicas mas relevantes
+                        </p>
+                    </div>
+                </div>
+                <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
+                    <a href="https://i-salud-optica.vercel.app/">
+                        <img src="blob:https://vercel.com/1ffc7374-d6ca-47e9-a3db-9d0f2ee00bb5" className="img-fluid rounded" alt="profile pic" />
+                    </a>
+                    <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
+                        <h3 className='text-white-50'>Landing Page</h3>
+                        <p className='text-light'>
+                            Landing Page de Optica
                         </p>
                     </div>
                 </div>
