@@ -26,7 +26,7 @@ function Proyects() {
                         <img src={Ecommerce} className="img-fluid rounded" alt="profile pic" />
                     </a>
                     <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
-                        <h3 className='text-white-50'>Ecommerce</h3>
+                        <h3 className='text-white-50'>Ecommerce(en desarrollo)</h3>
                         <p className='text-light'>
                             Ecommerce desarrollado en vite(react), consumiendo API desde <a href="https://fakestoreapi.com/">Fake Store API</a>, usando dependencias como <strong>Redux</strong>, <strong>TailwindCSS</strong>, entre otras
                         </p>
