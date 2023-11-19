@@ -22,7 +22,7 @@ function Proyects() {
                     </a>
                 </div>
                 <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
-                    <a href="https://i-salud-optica.vercel.app/">
+                    <a href="https://e-commerce-fake-api-theta.vercel.app/">
                         <img src={Ecommerce} className="img-fluid rounded" alt="profile pic" />
                     </a>
                     <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
