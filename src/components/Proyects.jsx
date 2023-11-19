@@ -3,7 +3,7 @@ import Promanitas from '../assets/promanitas.png'
 import AdminServer from '../assets/admin.png'
 import Pokemon from '../assets/pokemon.png'
 import Dogs from '../assets/pi.png'
-import Landing from '../assets/landing.png'
+import Ecommerce from '../assets/ecommerce.png'
 
 function Proyects() {
     return (
@@ -20,6 +20,17 @@ function Proyects() {
                     <a href="https://pro-manitas-client.vercel.app/">
                         <img src={Promanitas} className="img-fluid rounded" alt="profile pic" />
                     </a>
+                </div>
+                <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
+                    <a href="https://i-salud-optica.vercel.app/">
+                        <img src={Ecommerce} className="img-fluid rounded" alt="profile pic" />
+                    </a>
+                    <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
+                        <h3 className='text-white-50'>Ecommerce</h3>
+                        <p className='text-light'>
+                            Ecommerce desarrollado en vite(react), consumiendo API desde <a href="https://fakestoreapi.com/">Fake Store API</a>, usando dependencias como <strong>Redux</strong>, <strong>TailwindCSS</strong>, entre otras
+                        </p>
+                    </div>
                 </div>
                 <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
                     <a href="https://adminserver-nw65.onrender.com/">
@@ -51,17 +62,6 @@ function Proyects() {
                         <h3 className='text-white-50'>Dogs PI</h3>
                         <p className='text-light'>
                             SPA sencilla sobre razas de perros con algunas de sus caracteristicas mas relevantes
-                        </p>
-                    </div>
-                </div>
-                <div className="container-fluid d-flex align-items-center justify-content-between gap-5">
-                    <a href="https://i-salud-optica.vercel.app/">
-                        <img src={Landing} className="img-fluid rounded" alt="profile pic" />
-                    </a>
-                    <div className='p-4 rounded-2 bg-dark text-wrap fw-normal fs-5'>
-                        <h3 className='text-white-50'>Landing Page</h3>
-                        <p className='text-light'>
-                            Landing Page de Optica
                         </p>
                     </div>
                 </div>
