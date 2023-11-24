@@ -1,30 +1,33 @@
 {
-  "name": "portafolio23",
+  "name": "atom-html",
+  "version": "2.0.0",
+  "author": "Red Pixel Themes",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "css": "postcss assets/styles/main.css -o assets/styles/main.min.css --verbose",
+    "server-reload": "browser-sync start --config './browser-sync-config.js'",
+    "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
+    "build": "npm run css -- --env 'production'",
+    "format": "npx prettier ./**/*.html"
   },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ],
   "dependencies": {
-    "bootstrap": "^5.3.1",
-    "bootstrap-icons": "^1.10.5",
-    "jquery": "^3.7.1",
-    "popper.js": "^1.16.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "browser-sync": "^2.27.7",
+    "concurrently": "^7.0.0",
+    "cssnano": "^5.0.17",
+    "postcss-cli": "^9.1.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.3",
-    "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^4.4.5"
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.7",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "tailwindcss": "^3.0.23"
   }
 }
