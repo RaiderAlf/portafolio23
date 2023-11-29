@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply font-body antialiased;
+}
+
+#header {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to bottom, #5440afc8 60%, #9f92dbfd), url('./assets/bg-hero.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#intro {
+  font-family: 'Open sans', sans-serif;
+}
+
+#resume {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(#9f92db5d, #e1e1e1);
+}
+
+#portfolio {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to bottom, #f1f1f1a5, #f1f1f1a5), url('./assets/bg-cta.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#skillsLink:hover #skills {
+  transition: all .2s linear;
+  opacity: 100
+}
+
+#contact {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(#9f92db5d, #e1e1e1);
+}

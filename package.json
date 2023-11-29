@@ -1,20 +1,17 @@
 {
-  "name": "atom-html",
-  "version": "2.0.0",
-  "author": "Red Pixel Themes",
+  "name": "project",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "css": "postcss assets/styles/main.css -o assets/styles/main.min.css --verbose",
-    "server-reload": "browser-sync start --config './browser-sync-config.js'",
-    "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
-    "build": "npm run css -- --env 'production'",
-    "format": "npx prettier ./**/*.html"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "browserslist": [
-    "last 2 versions",
-    "> 1%"
-  ],
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
@@ -24,10 +21,18 @@
     "postcss-cli": "^9.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.7",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.5",
     "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.8",
-    "tailwindcss": "^3.0.23"
+    "prettier-plugin-tailwindcss": "^0.1.8"
   }
 }

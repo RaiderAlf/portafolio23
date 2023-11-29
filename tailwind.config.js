@@ -1,8 +1,11 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+/** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
 
-module.exports = {
-  content: ["./**/*.html"],
-  safelist: ["active"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     fontFamily: {
       header: ["Raleway", "sans-serif"],
@@ -34,7 +37,6 @@ module.exports = {
       "blog-gradient-from": "#8f9098",
       "blog-gradient-to": "#222222",
     },
-
     container: {
       center: true,
       padding: "1rem",
@@ -96,8 +98,9 @@ module.exports = {
     },
   },
   plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
+    "@tailwindcss/typography",
+    "@tailwindcss/forms",
+    "@tailwindcss/aspect-ratio"
   ],
-};
+}
+
