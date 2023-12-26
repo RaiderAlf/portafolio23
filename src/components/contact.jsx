@@ -1,3 +1,6 @@
+//ASSETS
+import CV from '../assets/cv.pdf'
+
 const Contact = () => {
     return (
         <>
@@ -30,6 +33,18 @@ const Contact = () => {
                         </div>
                         <a className="pt-2 text-left font-body font-bold text-primary lg:text-lg" href="mailto:kalfonzoespinett@gmail.com">
                             kalfonzoespinett@gmail.com
+                        </a>
+                    </div>
+                    <div
+                        className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+                        <div className="flex items-center">
+                            <i className="bx bxs-file-doc text-2xl text-grey-40"></i>
+                            <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+                                My CV
+                            </p>
+                        </div>
+                        <a className="pt-2 text-left font-body font-bold text-primary lg:text-lg" href={CV} download>
+                            DownLoad
                         </a>
                     </div>
                 </div>
