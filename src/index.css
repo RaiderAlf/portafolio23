@@ -25,45 +25,13 @@
 
 html {
   @apply font-body antialiased;
-  scroll-behavior: smooth;
-}
-
-.section {
-  height: 100vh;
-  /* Altura igual al alto de la ventana */
-  scroll-snap-align: start;
-  /* Ajustar al inicio de cada sección */
-}
-
-/* Valores de opacidad según la distancia al punto de ajuste */
-.opacity-100 {
-  opacity: 1;
-  /* Opacidad máxima */
-}
-
-.opacity-75 {
-  opacity: 0.75;
-  /* Opacidad media-alta */
-}
-
-.opacity-50 {
-  opacity: 0.5;
-  /* Opacidad media */
-}
-
-.opacity-25 {
-  opacity: 0.25;
-  /* Opacidad media-baja */
-}
-
-.opacity-0 {
-  opacity: 0;
-  /* Opacidad mínima */
+  scroll-behavior: smooth
 }
 
 #header {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(to bottom, #5440afc8 60%, #9f92dbfd), url('./assets/bg-hero.webp');
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,27 +43,40 @@ html {
 }
 
 #resume {
-  scroll-snap-align: start;
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(#9f92db5d, #e1e1e1);
 }
 
-#portfolio {
+#courses {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(to bottom, #f1f1f1a5, #f1f1f1a5), url('./assets/bg-cta.webp');
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#skillsLink:hover #skills {
-  transition: all .2s linear;
-  opacity: 100
+#portfolio {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(#9f92db5d, #e1e1e1);
 }
 
 #contact {
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(#9f92db5d, #e1e1e1);
+  min-height: 80vh;
+  background-image: linear-gradient(to bottom, #9f92db85, #f1f1f1), url('./assets/bg-contact.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 768px) {
+  #skillsLink:hover #skills {
+    transition: all .2s linear;
+    opacity: 100
+  }
 }
 
 .st0 {

@@ -1,18 +1,18 @@
 //ASSETS
-import CV from '../assets/cv.pdf'
+import CV from '../assets/cv1.pdf'
 
 const Contact = () => {
     return (
         <>
-            <div className="py-16 md:py-20" id="contact">
+            <div className="py-16 md:py-20 [box-shadow:_0_0_25px_rgb(0_0_0_)]" id="contact">
                 <h2 className="text-center font-header text-4xl drop-shadow-lg font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
                     Here&apos;s a contact form
                 </h2>
-                <h4 className="pt-6 text-center font-header text-xl drop-shadow-lg font-medium text-black sm:text-2xl lg:text-3xl">
+                <h4 className="pt-6 text-center font-header text-xl drop-shadow-lg font-medium text-secondary sm:text-2xl lg:text-3xl">
                     Have Any Questions?
                 </h4>
                 <div className="flex flex-col justify-center pt-16 lg:flex-row">
-                    <div className="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3">
+                    <div className="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-50 px-6 py-6 sm:py-8 lg:w-1/3">
                         <div className="flex items-center">
                             <i className="bx bx-phone text-2xl text-grey-40"></i>
                             <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
@@ -24,7 +24,7 @@ const Contact = () => {
                         </p>
                     </div>
                     <div
-                        className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+                        className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-50 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
                         <div className="flex items-center">
                             <i className="bx bx-envelope text-2xl text-grey-40"></i>
                             <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
@@ -36,7 +36,7 @@ const Contact = () => {
                         </a>
                     </div>
                     <div
-                        className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+                        className="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-50 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
                         <div className="flex items-center">
                             <i className="bx bxs-file-doc text-2xl text-grey-40"></i>
                             <p className="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
