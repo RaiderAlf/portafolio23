@@ -2,8 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #252426;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5540af;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f9e71c;
+}
+
 html {
   @apply font-body antialiased;
+  scroll-behavior: smooth;
+}
+
+.section {
+  height: 100vh;
+  /* Altura igual al alto de la ventana */
+  scroll-snap-align: start;
+  /* Ajustar al inicio de cada sección */
+}
+
+/* Valores de opacidad según la distancia al punto de ajuste */
+.opacity-100 {
+  opacity: 1;
+  /* Opacidad máxima */
+}
+
+.opacity-75 {
+  opacity: 0.75;
+  /* Opacidad media-alta */
+}
+
+.opacity-50 {
+  opacity: 0.5;
+  /* Opacidad media */
+}
+
+.opacity-25 {
+  opacity: 0.25;
+  /* Opacidad media-baja */
+}
+
+.opacity-0 {
+  opacity: 0;
+  /* Opacidad mínima */
 }
 
 #header {
@@ -20,6 +75,7 @@ html {
 }
 
 #resume {
+  scroll-snap-align: start;
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(#9f92db5d, #e1e1e1);
 }
@@ -40,4 +96,12 @@ html {
 #contact {
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(#9f92db5d, #e1e1e1);
+}
+
+.st0 {
+  fill: #007acc
+}
+
+.st1 {
+  fill: #fff
 }
