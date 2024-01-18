@@ -8,9 +8,9 @@ const Header = () => {
         <>
             <div id='header' className='bg-primary w-full lg:min-h-screen sm:h-fit py-3 sm:py-5 [box-shadow:0_0_15px_rgb(0_0_0_)]'>
                 <nav id='navBar' className='px-4 lg:px-12 flex justify-between items-center'>
-                    <div className=''>
+                    <div>
                         <a href={CV} download>
-                            <img id='logo' className='w-16 lg:w-48 drop-shadow-xl' src={LOGO} alt="Logo" />
+                            <img id='logo' className='w-16 lg:w-32' src={LOGO} alt="Logo" />
                         </a>
                     </div>
                     <div className='block text-xs lg:text-lg'>
@@ -30,12 +30,12 @@ const Header = () => {
                         </ul>
                     </div>
                 </nav>
-                <div id='intro' className='lg:py-36 sm:pt-8 sm:pb-5'>
+                <div id='intro' className='lg:py-36 sm:pt-8 sm:pb-5 mt-16'>
                     <div className='flex lg:flex-row flex-col items-center justify-center gap-12 '>
-                        <div className='rounded-full mt-12 lg:mt-0 border-8 border-primary shadow-xl'>
-                            <img className='h-52 rounded-full' src={AUTHOR} alt="Author" />
+                        <div className='divImg rounded-full mt-12 lg:mt-0 border-8 border-primary shadow-xl'>
+                            <img className='h-52 rounded-full' src={AUTHOR} alt="Kevin Alfonzo Dev" />
                         </div>
-                        <div className='sm:flex flex-col items-center justify-center lg:justify-start lg:items-start' >
+                        <div className='divIntro sm:flex flex-col items-center justify-center lg:justify-start lg:items-start' >
                             <h1 className='text-7xl text-center' >Hello I&apos;m Kevin Alfonzo</h1>
                             <div className='flex items-center mx-8 py-8 lg:-mx-2 lg:py-0'>
                                 <span className='text-3xl sm:py-4'>Let&apos;s Connect</span>

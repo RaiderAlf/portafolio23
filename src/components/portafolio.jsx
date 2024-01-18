@@ -1,3 +1,5 @@
+//HOOKS
+import { useRef, useEffect } from "react";
 //ASSETS
 import Ecommerce from '../assets/ecommerce.webp'
 import Pokedex from '../assets/pokedex.webp'
@@ -5,6 +7,24 @@ import Landing from '../assets/landing.webp'
 import ServerAdmin from '../assets/ServerAdmin.webp'
 
 const Portafolio = () => {
+
+    const portfolio = useRef(null)
+
+    useEffect(() => {
+        const verificarScroll = () => {
+            const { top, bottom } = portfolio.current.getBoundingClientRect();
+            if (top < window.innerHeight && bottom > 0) {
+                portfolio.current.classList.add('animateSkills')
+            } else {
+                portfolio.current.classList.remove('animateSkills')
+
+            }
+        };
+
+        window.addEventListener('scroll', verificarScroll);
+        return () => window.removeEventListener('scroll', verificarScroll);
+    }, []);
+
     return (
         <div id='portfolio' className='px-20 py-16 md:py-20 [box-shadow:inset_0_0_15px_#5540af]'>
             <h2 className="text-center font-header text-4xl font-semibold drop-shadow-lg uppercase text-primary sm:text-5xl lg:text-6xl">
@@ -14,7 +34,7 @@ const Portafolio = () => {
                 Here&apos;s what I have done with the past
             </h3>
 
-            <div className="grid sm:ml-24 lg:ml-0 w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+            <div ref={portfolio} id="portfolioDiv" className="grid sm:ml-24 lg:ml-0 w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
                 <a id="skillsLink" href="https://e-commerce-fake-api-theta.vercel.app/"
                     className="transform transition-all hover:scale-105 md:mx-0 rounded-lg opacity-90 hover:opacity-100 hover:[box-shadow:_0_0_10px_rgb(0_0_0_)] [box-shadow:_0_0_30px_rgb(0_0_0_/_50%)]">
                     <img src={Ecommerce} className="w-full rounded shadow" alt="portfolio image" />

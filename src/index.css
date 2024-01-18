@@ -28,6 +28,7 @@ html {
   scroll-behavior: smooth
 }
 
+/* HEADER STYLES */
 #header {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(to bottom, #5440afc8 60%, #9f92dbfd), url('./assets/bg-hero.webp');
@@ -38,15 +39,136 @@ html {
   color: white;
 }
 
+nav {
+  animation: showPic .8s linear;
+  background-image: linear-gradient(to bottom, #5440af 40%, #9f92db00);
+  padding: .5rem 0;
+  height: fit-content;
+  z-index: 1000;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
 #intro {
   font-family: 'Open sans', sans-serif;
 }
 
+#logo {
+  filter: drop-shadow(0 0 4px #000000);
+  transition: all .3s linear;
+}
+
+#logo:hover {
+  filter: drop-shadow(0 0 4px #fbec44);
+  transform: scale(1.02);
+}
+
+
+.divImg {
+  animation: showPic 1s linear;
+  box-shadow: 0 0 30px #130b36, 0 0 5px #f1f1f1, inset 0 0 10px #ff0202;
+}
+
+.divImg img {
+  box-shadow: 0 0 10px #130b36;
+}
+
+.divIntro {
+  animation: showIntro 1s linear;
+  text-shadow: 0 0 5px #ffea00;
+}
+
+
+
+@keyframes showPic {
+  0% {
+    transform: translateY(-8rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showIntro {
+  0% {
+    transform: translateX(-8rem);
+    opacity: 0;
+    text-shadow: 0 0 0px #fbec44;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    text-shadow: 0 0 5px #fbec44;
+  }
+}
+
+
+
+
+
+/* RESUME STYLES */
 #resume {
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(#9f92db5d, #e1e1e1);
 }
 
+#skills {
+  box-shadow: inset_0_0_10px_#5540af, inset_0_0_20px_#000, _0_0_10px_#5540af;
+  transition: all .3s linear;
+}
+
+#skills h3 {
+  text-shadow: 0 0 3px #5540af, 0 0 10px #fbec44;
+}
+
+.skills div {
+  filter: drop-shadow(0 0 2px #5540af);
+  transition: all .3s linear;
+}
+
+.skills div:hover {
+  filter: drop-shadow(0 0 7px #5540af);
+  transform: scale(1.1);
+}
+
+.animate {
+  animation: showResume 1s forwards;
+}
+
+.animateSkills {
+  animation: showSkills 1s forwards;
+}
+
+@keyframes showResume {
+  0% {
+    transform: translateX(-8rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showSkills {
+  0% {
+    transform: translateY(-8rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* COURSES STYLES */
 #courses {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(to bottom, #f1f1f1a5, #f1f1f1a5), url('./assets/bg-cta.webp');
@@ -56,11 +178,31 @@ html {
   background-repeat: no-repeat;
 }
 
+.animateCourses {
+  animation: showCourses 2s forwards;
+}
+
+@keyframes showCourses {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* PORTFOLIO STYLES */
 #portfolio {
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(#9f92db5d, #e1e1e1);
 }
 
+#portfolioDiv {
+  opacity: 0;
+}
+
+/* CONTACT STYLES */
 #contact {
   font-family: 'Raleway', sans-serif;
   min-height: 80vh;
@@ -69,6 +211,10 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#contactDiv {
+  opacity: 0;
 }
 
 
