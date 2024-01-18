@@ -213,12 +213,13 @@ nav {
   background-repeat: no-repeat;
 }
 
-#contactDiv {
-  opacity: 0;
-}
 
 
 @media screen and (min-width: 768px) {
+  #contactDiv {
+    opacity: 0;
+  }
+
   #skillsLink:hover #skills {
     transition: all .2s linear;
     opacity: 100

@@ -11,7 +11,7 @@ const Contact = () => {
     useEffect(() => {
         const verificarScroll = () => {
             const { top, bottom } = contact.current.getBoundingClientRect();
-            if (top < window.innerHeight && bottom < 700) {
+            if (top < window.innerHeight && bottom <= 1000) {
                 contact.current.classList.add('animateCourses')
                 footer.current.classList.add('animateCourses')
             } else {
