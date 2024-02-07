@@ -28,7 +28,9 @@ const Resume = () => {
                 <div ref={resume} className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left bg-gray-500 p-3 rounded-lg">
                     <h1 className='text-5xl lg:text-6xl text-primary font-bold drop-shadow-lg'>WHO AM I?</h1>
                     <h3 className="pt-6 font-header text-xl text-grey-10 drop-shadow-lg font-medium sm:text-2xl lg:text-3xl">I&apos;m Kevin Alfonzo</h3>
-                    <h3 className="pt-6 font-header text-xl text-grey-10 drop-shadow-lg font-medium sm:text-2xl lg:text-3xl">FrontEnd && BackEnd Developer</h3>
+                    <h3 className="pt-6 font-header text-xl text-grey-10 drop-shadow-lg font-medium sm:text-2xl lg:text-3xl">
+                        FullStack Developer focused FrontEnd
+                    </h3>
                     <p className="indent-1 pt-4 font-body leading-relaxed text-secondary">
                         Hello, I am a passion for science and technology since I was young. I started my journey in development in 2021 and have had a series of small victories during my learning. I am always looking to learn something new and share my knowledge with others, in any situation.
                     </p>
@@ -38,7 +40,7 @@ const Resume = () => {
                     </p>
                     <p className="pt-3 font-body leading-relaxed text-secondary">
                         I have learned a variety of technologies, languages, and frameworks, including HTML, CSS, JavaScript,
-                        TypeScript, GoLang, React, Vue, Vite, Redux, NodeJS, Express, Git, PostgreSQL
+                        TypeScript, GoLang, PHP, WordPress, React, Vue, Vite, Redux, NodeJS, Express, Git, PostgreSQL
                         and MongoDB. In each project, I use the Agile methodology of SCRUM and tools such as Jira, Trello, CI/CD.
                     </p>
                     <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
