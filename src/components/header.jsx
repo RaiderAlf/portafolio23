@@ -25,6 +25,9 @@ const Header = () => {
                                 <a className='cursor-pointer pt-0.5 font-header font-semibold uppercase' href="#portfolio">PORTFOLIO</a>
                             </li>
                             <li className='group [font-size:8px] px-1.5 lg:text-lg lg:pl-6 hover:text-yellow transition-all'>
+                                <a className='cursor-pointer pt-0.5 font-header font-semibold uppercase' href="#exp">EXPERIENCE</a>
+                            </li>
+                            <li className='group [font-size:8px] px-1.5 lg:text-lg lg:pl-6 hover:text-yellow transition-all'>
                                 <a className='cursor-pointer pt-0.5 font-header font-semibold uppercase' href="#contact">CONTACT</a>
                             </li>
                         </ul>
