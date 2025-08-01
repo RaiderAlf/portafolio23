@@ -22,21 +22,27 @@ const Exp = () => {
     const events = [
         {
             id: 1,
-            date: "July 2024 - ACT",
+            date: "July 2024 - Act",
             title: "SmartSoft Solutions LLC,",
-            description: "Full Stack Developer - Semi-Senior"
+            description: "FullStack Developer - Semi-Senior"
         },
         {
             id: 2,
-            date: "Sempiterno Group",
-            title: "May 2024 - July 2024",
-            description: "Full Stack Developer - Programador GeneXus"
+            date: "Jume 2024 - July 2024",
+            title: "Hyperreality Company",
+            description: "FullStack Developer"
         },
         {
             id: 3,
-            date: "Ene 2022 - Marzo 2024",
+            date: "May 2024 - June 2024",
+            title: "Sempiterno Group",
+            description: "FullStack Developer - GeneXus Developer"
+        },
+        {
+            id: 4,
+            date: "Jan 2022 - March 2024",
             title: "Mosqueda y Cordova",
-            description: "Full Stack Developer - Junior"
+            description: "FullStack Developer - Junior"
         }
     ];
 
@@ -52,7 +58,7 @@ const Exp = () => {
                     </h3>
                 </div>
                 <div className="container mx-auto px-4 py-8">
-                    <div ref={studies} className="flex flex-col justify-center md:grid lg:grid-cols-9 gap-12 text-black">
+                    <div ref={studies} className="flex flex-col justify-center md:grid lg:grid-cols-12 gap-12 text-black">
                         {events.map((event) => (
                             <div key={event.id} className="md:col-span-3 flex justify-start items-center">
                                 <div className="border-l-4 border-secondary pl-4">

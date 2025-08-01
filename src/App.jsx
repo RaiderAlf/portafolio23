@@ -12,9 +12,9 @@ function App() {
     <>
       <Header />
       <Resume />
-      <Courses />
-      <Portfolio />
       <Exp />
+      <Portfolio />
+      <Courses />
       <Contact />
     </>
   )

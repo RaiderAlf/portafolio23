@@ -1,7 +1,7 @@
 //HOOKS
 import { useRef, useEffect } from "react";
 //ASSETS
-import CV from '../assets/cv1.pdf'
+import CV from '../assets/cvKev.pdf'
 
 const Contact = () => {
 
@@ -42,7 +42,7 @@ const Contact = () => {
                             </p>
                         </div>
                         <p className="pt-2 w-fit cursor-pointer transition-all text-left font-body hover:text-secondary hover:[text-shadow:_0_0_10px_#f9e71c]  font-bold text-primary lg:text-lg">
-                            (+58) 412 141 7669
+                            (+54) 11 7846-2264
                         </p>
                     </div>
                     <div
